@@ -55,11 +55,11 @@ gender_map = {'male': 0, 'female': 1}
 y_n_map = {'yes': 1, 'no': 0}
 
 # logistic regression model
-model_file_path = 'C:/Users/Win10/OneDrive/Рабочий стол/партфолио/churn-prediction-streamlit-app-main/models/lr_model_churn_prediction.sav'
+model_file_path = 'models/lr_model_churn_prediction.sav'
 model = pickle.load(open(model_file_path, 'rb'))
 
 # encoding model DictVectorizer
-encoding_model_file_path = 'C:/Users/Win10/OneDrive/Рабочий стол/партфолио/churn-prediction-streamlit-app-main/models/encoding_model.sav'
+encoding_model_file_path = 'models/encoding_model.sav'
 encoding_model = pickle.load(open(encoding_model_file_path, 'rb'))
 
 # Кэширование функции предсказания
