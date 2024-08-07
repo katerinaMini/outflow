@@ -131,8 +131,8 @@ with st.sidebar:
         contract = st.selectbox('Контракт', ('month-to-month', 'one_year', 'two_year'))
         paperless_billing = st.selectbox('Бумажный чек', ('yes', 'no'))
         payment_method = st.selectbox('Способ оплаты', ('bank_transfer_(automatic)', 'credit_card_(automatic)', 'electronic_check', 'mailed_check'))
-        monthly_charges = st.number_input('Ежемесячные платежи', min_value=0, max_value=1000, value=0)
-        total_charges = st.number_input('Общие платежи', min_value=0, max_value=100000, value=0)        
+        monthly_charges = st.number_input('Ежемесячные платежи', min_value=0, max_value=100000, value=0)
+        total_charges = st.number_input('Общие платежи', min_value=0, max_value=10000000, value=0)        
         
         # Если введен ID клиента, то показываем слайдер с порогом и кнопку предсказания
         if customer_id != '':
